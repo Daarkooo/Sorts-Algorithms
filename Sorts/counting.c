@@ -22,12 +22,12 @@ int main(){
     for(i=0; i<n; i++){
         count[tab[i]]++;
     }
-
     for(i=1; i<=max; i++){
         count[i]=count[i]+count[i-1];
     }
 
     int zeroTab[n];
+    // int zeroTab[n]={0};
 
     for(i=0; i<n; i++){
         zeroTab[i]=0;
